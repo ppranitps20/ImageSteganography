@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <title>Steganography</title>
+    <meta name='viewport'
+        content='width=device-width, initial-scale=1, maximum-scale=1'>
+    <link href='bulma.min.css' type='text/css' rel='stylesheet'></link>
+    <script src='sjcl.min.js' type='text/javascript'></script>
+    <script src='main.js' type='text/javascript'></script>
+</head>
+<body>
+    
+        
+            
+
+    <section class="hero is-medium is-primary is-bold">
+            <div class="hero-body">
+                <div class="container">
+
+                        <nav class="level">
+                
+                                <p class="level-item has-text-centered">
+                                  <img src="my_logo.png" alt="" style="height: 100px;">
+                                </p>
+                               
+                              </nav>
+
+    <div class="tile is-ancestor">
+            <div class="tile is-vertical is-8">
+              <div class="tile">
+                <div class="tile is-parent is-vertical">
+                  <article class="tile is-child notification is-primary">
+                    <p class="title">Image Steganography</p>
+                    <p class="subtitle"> A steganography tool built for data hiding in images.<br/></p>
+                    <p class="subtitle">See <a href='about.html'>How it works</a>.</p>
+                  </article>
+
+                  <article class="tile is-child notification is-warning">
+                    <p class="title">Encode</p>
+                    <div class="field">
+
+                            
+                            <div class="control">
+                              <input type='password' id='password' class="input is-primary" type="text" placeholder="Password">
+                            </div>
+                            <p class="help is-info">Optional</p>
+                          </div>
+                    
+                    <div class="field">
+                            <div class="control">
+                                    <textarea id='message' class="textarea is-focused" placeholder="Enter Message"></textarea>
+                            </div><br/>
+                            <div class="control">      
+                            <button id='encode' class='button is-link'>Hide message</button>
+                            </div>
+                            
+                    </div>
+                  </article>
+                </div>
+                <div id='main' class="tile is-parent">
+                  <article class="tile is-child notification is-info">
+                    <p class="title">Upload Image To Encode/Decode</p>
+                    <p class="subtitle">Choose an image</p>
+
+                    <div class="field">
+                    
+                    <div id='main' class="file is-right is-primary">
+                      
+                      <label class="file-label">
+                          <input id='file' class="file-input" type='file'>
+                          <span class="file-cta">
+                            <span class="file-icon">
+                              <i class="fas fa-upload"></i>
+                            </span>
+                            <span class="file-label">
+                              Select file…
+                            </span>
+                          </span>
+                        <span class="file-name">
+                          Upload Image Here ------->
+                        </span>
+                      </label>
+                    </div>
+                      <figure class="image is-4by3">
+                        <img id='preview'/>
+                      </figure>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="tile is-parent">
+                <article class="tile is-child notification is-danger">
+                  <p class="title">What is Steganography?</p>
+                  <p class="subtitle">Steganography is the practice of concealing a file, message, image, or video within another file, message, image, or video. The word steganography combines the Greek words steganos (στεγανός), meaning "covered, concealed, or protected", and graphein (γράφειν) meaning "writing". .The advantage of steganography over cryptography alone is that the intended secret message does not attract attention to itself as an object of scrutiny. Plainly visible encrypted messages, no matter how unbreakable they are, arouse interest and may in themselves be incriminating in countries in which encryption is illegal</p>
+                  <div class="content">
+                        
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child notification is-success">
+                <div class="content">
+                  <p class="title">Decode Message</p>
+                  <p class="subtitle">Enter Password</p>
+                  <div class="content">
+
+                        <input type='password' id='password2' class='input is-info'
+                        placeholder='Password' />
+                    </div>   
+                    <button id='decode' class='button is-info'>Reveal message</button>
+                    <!-- Content -->
+                  
+                </div>
+               
+
+                    <div id='choose' class='section dark hide'>
+                        <div class='sectionbody'>
+                            
+                        </div>
+                    </div>
+                    <div id='reveal' class='section dark hide'>
+                        <div class='title'>Hidden message</div>
+                        <div id='messageDecoded' class='subtitle'></div>
+                    </div>
+
+              </article>
+            </div>
+          </div>
+          
+        <p class="title">Encoded Image</p>
+        <canvas id='canvas' class="canvas"></canvas>
+
+            </div>
+        </div>
+    </section>      
+
+    
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Steganography </strong> by <a href="https://github.comppranitps20">Olive Street Boys</a>. 
+          </p>
+        </div>
+      </footer>
+
+               
+
+      
+    
+
+      
+  
+  
+      
+</body>
+</html>
